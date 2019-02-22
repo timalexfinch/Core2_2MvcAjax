@@ -1,0 +1,10 @@
+# Core2_2MvcAjax
+Core 2.2 Mvc Uses jQuery AJAX to call a variety of services 
+Calls a local getTime service
+Calls a web randomUser service
+Makes calls to a database (AdventureWorks)
+For the database: 
+  1. the paging is done with X.PagedList.Mvc
+  2. the Partial page is done with the <partial /> tag
+  3. the IsAjax is done with Request.Headers
+  4. No Sorting on Column Headers
