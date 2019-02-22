@@ -1,0 +1,36 @@
+﻿@using X.PagedList.Mvc.Core;
+@model IEnumerable<AdventureWorksCore2_2.Models.Product>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>AdventureWorks Products</h1>
+<p>
+    <img class="roundedCorners" src="~/Images/IMG-20171211-WA0005.jpg" height="600" width="800" />
+</p>
+<p>
+    On this page:
+    <ul>
+        <li>The paging is done with X.PagedList.</li>
+        <li>The Partial page is done with the <code> &lt;partial /&gt; </code> Tag Helper</li>
+        <li>The AJAX works using:  <code> bool IsAjaxRequest = Request.Headers["X-Requested-With"] == "XMLHttpRequest"</code></li>
+        <li>No Sorting</li>
+    </ul>
+</p>
+
+<p>
+    <a asp-action="Create">Create New Product</a>
+</p>
+
+<div id="productsTable">
+    @*Any of these next 3 lines will work, but Html Helpers are discouraged (race condition):*@
+
+    <partial name="_ProductList.cshtml" />
+    @*<partial name="_ProductList" model="Model" />*@
+    @*@await Html.PartialAsync("_ProductList", Model)*@
+</div>
+
+
+
+

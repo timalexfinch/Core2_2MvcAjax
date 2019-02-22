@@ -2,7 +2,59 @@
     ViewData["Title"] = "Home Page";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div>
+    <h1>Tim's Core 2.2 MVC AJAX site</h1>
+    <p class="lead">
+        <br />
+        A web site to show how to use jQuery and AJAX to call server-side code.
+        <br /><br />
+        On this page, you can call our own <strong>GetTime</strong> service, plus a <strong>Get Random User</strong> service from the web.
+        <br /><br />
+        Click on the <strong>Products</strong> link above to get data from a database.
+        <ul>
+            <li>The paging is done with X.PagedList.</li>
+            <li>The Partial page is done with the <code> &lt;partial /&gt; </code> Tag Helper</li>
+            <li>The AJAX works using:  <code> bool IsAjaxRequest = Request.Headers["X-Requested-With"] == "XMLHttpRequest"</code></li>
+            <li>No Sorting</li>
+        </ul>
+    </p>
 </div>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            <img class="roundedCorners" src="~/images/IMG-20171211-WA0005.jpg" height="300" width="300" />
+            <br /><br />
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.dunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+
+        <br />
+        <p>
+            <input id="btnGetTime" type="button"
+                   value="Call GetTime using jQuery and AJAX" />
+            <br /><br />
+        </p>
+        <p id="whatsTheTime">
+
+        </p>
+    </div>
+
+
+    <div class="col-md-4">
+        <h2>Call a Web Service</h2>
+        <p>
+            Tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.dunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut laoreet ac, aliquam sit amet justo nunc tempor, metus vel.
+        </p>
+        <br />
+        <p>
+            <input id="btnGetRandomUser" type="button" value="Call Get Random User Web Service" />
+            <br /><br />
+        </p>
+        <p id="randomUser" class="text-center roundedCorners">
+
+        </p>
+    </div>
+</div>
+
+

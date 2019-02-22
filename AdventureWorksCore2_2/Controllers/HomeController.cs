@@ -15,8 +15,14 @@ namespace AdventureWorksCore2_2.Controllers
             return View();
         }
 
+        public string GetTime()
+        {
+            return DateTime.Now.ToString();
+        }
+
         public IActionResult Privacy()
         {
+            ViewData["timsMessage"] = "Tim's message here.";
             return View();
         }
 
