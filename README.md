@@ -1,8 +1,9 @@
 # Core2_2MvcAjax
-Core 2.2 Mvc Uses jQuery AJAX to call a variety of services 
-Calls a local getTime service
-Calls a web randomUser service
+Core 2.2 Mvc Uses jQuery AJAX to call a variety of services <br />
+Calls a local getTime service<br />
+Calls a web randomUser service<br />
 Makes calls to a database (AdventureWorks)
+
 For the database: 
   1. the paging is done with X.PagedList.Mvc
   2. the Partial page is done with the <partial /> tag
